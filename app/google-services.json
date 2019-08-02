@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "687557342433",
+    "firebase_url": "https://bonvoyage-7ac06.firebaseio.com",
+    "project_id": "bonvoyage-7ac06",
+    "storage_bucket": "bonvoyage-7ac06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687557342433:android:628e8b551b9eddca",
+        "android_client_info": {
+          "package_name": "com.android.ran"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687557342433-h2j5o75feta2lifds4oe0ik1rev7n2v6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.ran",
+            "certificate_hash": "1819e5110717062d56bdc788c377f7d5e93deffa"
+          }
+        },
+        {
+          "client_id": "687557342433-lm17sf84k9qc60m4a0jebi8eiiituhrh.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "687557342433-lm17sf84k9qc60m4a0jebi8eiiituhrh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRMfatjdsYTULxHp5KWIhD5HOzhp90KYw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687557342433-lm17sf84k9qc60m4a0jebi8eiiituhrh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687557342433:android:e32ffe78cddda8c4",
+        "android_client_info": {
+          "package_name": "com.bonvoyage.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687557342433-ema11gv8vqln1jcbrcf3c0ooi9o9nm0r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bonvoyage.admin",
+            "certificate_hash": "1819e5110717062d56bdc788c377f7d5e93deffa"
+          }
+        },
+        {
+          "client_id": "687557342433-lm17sf84k9qc60m4a0jebi8eiiituhrh.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "687557342433-lm17sf84k9qc60m4a0jebi8eiiituhrh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRMfatjdsYTULxHp5KWIhD5HOzhp90KYw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687557342433-lm17sf84k9qc60m4a0jebi8eiiituhrh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

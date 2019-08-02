@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.5dp"
+            app:contentPadding="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/trips_cab_logo"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/ic_app_logo"
+                    tools:ignore="ContentDescription" />
+
+                <RelativeLayout
+                    android:id="@+id/trips_info_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignTop="@+id/trips_cab_logo"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/trips_cab_logo">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/trips_fare"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/trips_start_time"
+                            style="@style/body1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            tools:text="Sun, May 24, 10:45 PM" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp">
+
+                            <TextView
+                                style="@style/body1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:text="@string/crn" />
+
+                            <TextView
+                                android:id="@+id/trips_id"
+                                style="@style/body1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="KGP471089" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/trips_fare"
+                        style="@style/body1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_vertical"
+                        tools:text="₹ 2000" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trips_info_layout"
+                    android:layout_alignStart="@+id/trips_info_layout"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/pickup_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="16dp"
+                            android:layout_marginTop="11dp"
+                            android:background="@null"
+                            android:src="@mipmap/ic_pickup"
+                            tools:ignore="ContentDescription" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/pickup_icon"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/trips_pickup"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:maxLines="2"
+                                tools:text="RP Hall, IIT Kharagpur" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/drop_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="16dp"
+                            android:background="@null"
+                            android:src="@mipmap/ic_drop"
+                            tools:ignore="ContentDescription" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/drop_icon"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/trips_drop"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:maxLines="2"
+                                tools:text="Kolkata International Airport" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_your_ride_details_new"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollViewRideDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:contentPaddingLeft="16dp"
+                    app:contentPaddingRight="16dp"
+                    app:contentPaddingTop="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/driver_info" />
+
+                        <View style="@style/DividerWithMargin" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/trip_details_driver_name"
+                                style="@style/body1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                tools:text="Manohar Lal Sharma" />
+
+                            <TextView
+                                android:id="@+id/trip_details_driver_contact"
+                                style="@style/body1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_phone"
+                                android:drawablePadding="8dp"
+                                tools:text="+91 9876543210" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:contentPaddingLeft="16dp"
+                    app:contentPaddingRight="16dp"
+                    app:contentPaddingTop="16dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/cab_info" />
+
+                        <View style="@style/DividerWithMargin" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/trip_details_car_name"
+                                style="@style/body1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="16dp"
+                                android:gravity="center_vertical"
+                                tools:text="Maruti Suzuki Swift" />
+
+                            <TextView
+                                android:id="@+id/trip_details_car_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="16dp"
+                                android:gravity="center_vertical"
+                                tools:text="TN 06H 34 5938" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:contentPaddingLeft="16dp"
+                    app:contentPaddingRight="16dp"
+                    app:contentPaddingTop="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/ride_details_location_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/location_info" />
+
+                        <View style="@style/DividerWithMargin" />
+
+                        <RelativeLayout
+                            android:id="@+id/pickup_location_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/pickup_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:paddingTop="24dp"
+                                android:src="@mipmap/ic_pickup"
+                                tools:ignore="ContentDescription" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_toEndOf="@id/pickup_icon"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/trip_details_pickup"
+                                    style="@style/body1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginBottom="16dp"
+                                    android:maxLines="2"
+                                    tools:text="RK Hall, IIT Kharagpur" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/drop_location_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/drop_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:paddingBottom="24dp"
+                                android:src="@mipmap/ic_drop"
+                                tools:ignore="ContentDescription" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_toEndOf="@id/drop_icon"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/trip_details_drop"
+                                    style="@style/body1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginBottom="16dp"
+                                    android:maxLines="2"
+                                    tools:text="Kolkata International Airport" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:contentPaddingLeft="16dp"
+                    app:contentPaddingRight="16dp"
+                    app:contentPaddingTop="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/payment_info" />
+
+                        <View style="@style/DividerWithMargin" />
+
+                        <LinearLayout
+                            android:id="@+id/profile_mobile_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                style="@style/body1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:text="@string/status" />
+
+                            <TextView
+                                android:id="@+id/ride_details_payment_status"
+                                style="@style/body1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="Received" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                style="@style/body1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:text="@string/seats_booked" />
+
+                            <TextView
+                                android:id="@+id/trip_details_seats"
+                                style="@style/body1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="4" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                style="@style/body1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:text="@string/total_amount" />
+
+                            <TextView
+                                android:id="@+id/trip_details_fare"
+                                style="@style/body1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="₹ 2000" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

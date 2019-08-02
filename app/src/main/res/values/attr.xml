@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularImageView">
+        <attr name="border" format="boolean"/>
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+        <attr name="shadow" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ProcessView">
+        <attr name="value" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="FlexibleRatingBar">
+        <attr name="colorOutlineOn" format="color" />
+        <attr name="colorOutlineOff" format="color" />
+        <attr name="colorOutlinePressed" format="color" />
+        <attr name="colorFillOn" format="color" />
+        <attr name="colorFillOff" format="color" />
+        <attr name="colorFillPressedOn" format="color" />
+        <attr name="colorFillPressedOff" format="color" />
+        <attr name="polygonVertices" format="integer" />
+        <attr name="polygonRotation" format="integer" />
+        <attr name="strokeWidth" format="dimension" />
+    </declare-styleable>
+</resources>

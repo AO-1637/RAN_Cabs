@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_profile_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <View
+            android:id="@+id/profile_cover_picture"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/test_profile_cover" />
+
+        <com.android.ran.util.CircularImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test_profile_picture"
+            app:border="true"
+            app:border_color="@color/black"
+            app:border_width="1dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/profile_name_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/profile_name"
+            style="@style/h6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            tools:text="Lorem Ipsum" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/profile_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View style="@style/DividerWithMargin" />
+
+        <LinearLayout
+            android:id="@+id/profile_email_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/profile_email_tv"
+                style="@style/body1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="8dp"
+                android:text="@string/email" />
+
+            <TextView
+                android:id="@+id/profile_email"
+                style="@style/body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                tools:text="username@mail.com" />
+
+        </LinearLayout>
+
+        <View style="@style/DividerWithMargin" />
+
+        <LinearLayout
+            android:id="@+id/profile_mobile_number_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/profile_mobile_number_tv"
+                style="@style/body1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="8dp"
+                android:text="@string/mobile_number" />
+
+            <TextView
+                android:id="@+id/profile_mobile_number"
+                style="@style/body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                tools:text="+91 9876543210" />
+
+        </LinearLayout>
+
+        <View style="@style/DividerWithMargin" />
+
+        <LinearLayout
+            android:id="@+id/profile_alternate_number_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/profile_alternate_number_tv"
+                style="@style/body1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="8dp"
+                android:text="@string/alternate_number" />
+
+            <TextView
+                android:id="@+id/profile_alternate_number"
+                style="@style/body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                tools:text="+91 9876543210" />
+
+        </LinearLayout>
+
+        <View style="@style/DividerWithMargin" />
+
+        <LinearLayout
+            android:id="@+id/profile_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/profile_password_tv"
+                style="@style/body1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="8dp"
+                android:text="@string/password" />
+
+            <TextView
+                android:id="@+id/profile_password"
+                style="@style/body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:text="@string/asterisks"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View style="@style/DividerWithMargin" />
+
+    </LinearLayout>
+
+</LinearLayout>
